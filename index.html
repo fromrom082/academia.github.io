@@ -20,7 +20,7 @@
     <body>
 
         <!-- IMAGEN DE FONDO -->
-        <div class="imagen-fondo"></div>
+        <img class="imagen-fondo" src="img/fondos/4.jpg">
 
         <!-- CONTENEDOR DEL FORMULARIO -->
         <div class="fondo-contenedor"><div class="formulario-fondo"></div></div>
@@ -32,10 +32,10 @@
             <a href="index.html"><img src="img/iconos/VA-7.png" class="logotipo" alt="Virtual Academy"></a>
 
             <!-- INPUT EMAIL -->
-            <div><input type="email" placeholder="Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('El email debe tener el siguiente formato caracteres@caracteres.dominio ')" required></div>
+            <div><input type="email" placeholder="Email" name="email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" oninvalid="setCustomValidity('Formato no válido. Ejemplo de correo: alumno@academia.es')" required></div>
 
             <!-- INPUT CONTRASEÑA -->
-            <div><input type="password" placeholder="Contraseña" name="password" pattern="[A-Za-z0-9!?-]{6,18}" oninvalid="setCustomValidity('La contraseña debe tener entre 6 y 18 caracteres ')" required></div>
+            <div><input type="password" placeholder="Contraseña" name="password" pattern="[A-Za-z0-9!?-]{6,18}" oninvalid="setCustomValidity('La contraseña debe tener entre 6 y 18 caracteres.')" required></div>
             
             <!-- ENLACE RECUPERAR CONTRASEÑA -->
             <a href="recupera-contraseña.html" class="recupera-contraseña"><br><b>¿olvidaste la contraseña?</b></a><br>
